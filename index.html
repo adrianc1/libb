@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- title -->
+		<h1 id="page-title">Welkome too My Libarary</h1>
+
+		<!-- library table -->
+		<div id="main">
+			<table id="myTable">
+				<thead>
+					<tr id="header-row">
+						<th id="title-header">Title</th>
+						<th id="author-header">Author</th>
+						<th id="pages-header">Pages</th>
+						<th id="is-read">Read?</th>
+					</tr>
+				</thead>
+				<tbody id="table-body"></tbody>
+			</table>
+		</div>
+
+		<dialog id="dialog">
+			<form id="form-modal">
+				<h1>testtttt</h1>
+				<!-- book title -->
+				<label for="title">Title</label><br />
+				<input type="text" id="title" name="title" required minlength="4" />
+				<br />
+				<!-- book author  -->
+
+				<label for="author">Author</label><br />
+				<input type="text" id="author" name="author" required />
+
+				<!-- number of pages  -->
+				<label for="pages"># of Pages</label><br /><br />
+				<input type="number" id="pages" name="pages" required />
+
+				<!-- have you read? -->
+				<label for="have-read">Have you read?</label><br />
+
+				<!-- radio for yes  -->
+				<label for="have-read">Yes</label>
+				<input
+					class="radio"
+					type="radio"
+					id="have-read-yes"
+					name="have-read"
+					value="yes"
+					required
+				/>
+
+				<!-- radio for no -->
+				<label for="have-read">No</label>
+				<input
+					class="radio"
+					type="radio"
+					id="not-read-no"
+					name="have-read"
+					value="no"
+					required
+				/>
+
+				<!-- submit button  -->
+				<button id="submit">Submit</button>
+			</form>
+		</dialog>
+		<!-- add new book button -->
+		<button id="add-book">Add New Book</button>
+
+		<script src="main.js"></script>
+	</body>
+</html>
